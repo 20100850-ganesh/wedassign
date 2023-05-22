@@ -35,7 +35,7 @@ router.get('/', async (req, res, next) => {
         // Fetch movies from MongoDB collection
         const dbmovies = await Movie.find().skip((page - 1) * 20).limit(20);
 
-        res.json(dbmovies);
+        res.json(movies);
     } catch (error) {
         next(error);
     }

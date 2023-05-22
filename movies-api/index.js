@@ -5,6 +5,7 @@ import movieRoutes from './src/routes/movieRoutes.js';
 import errorHandler from './src/utils/errorHandler.js';
 import cors from 'cors';
 import trendingRoutes from './src/routes/trendingRoutes.js';
+import seriesRoutes from './src/routes/seriesRoutes.js';
 
 
 dotenv.config();
@@ -22,6 +23,7 @@ app.use(cors({
 // Routes
 app.use('/movies', movieRoutes);
 app.use('/trending', trendingRoutes);
+app.use('/series', seriesRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
