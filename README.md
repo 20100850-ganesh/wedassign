@@ -1,3 +1,4 @@
+
 # EWD Assignment-2 : Movie App Backend API Develpment 
 This is the project for Enterprise Web Development Assignment-2 submission consisting of API's for the react frontend for movie application where users can search for movies/tv series and can see trending movies and search through TV series and movies available.
 
@@ -60,7 +61,9 @@ BackEnd API node.js project deployed at:
   https://ewd-assign2.onrender.com
 ```
 
-
+Access the Front-End link to use the App,
+since the backend was deployed to a free service, the page will take a minute or so to load the very first time any request sent, as the service at backend will have to restart the resources.
+If nothing gets displayed, please wait for a minute or so to get the movies/TV results on the screen.
 
 ## API Reference
 
