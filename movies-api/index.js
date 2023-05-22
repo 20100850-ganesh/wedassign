@@ -6,6 +6,8 @@ import errorHandler from './src/utils/errorHandler.js';
 import cors from 'cors';
 import trendingRoutes from './src/routes/trendingRoutes.js';
 import seriesRoutes from './src/routes/seriesRoutes.js';
+import searchRouter from './src/routes/search.js';
+import searchRequest from './src/routes/searchRequest.js';
 
 
 dotenv.config();
@@ -24,6 +26,8 @@ app.use(cors({
 app.use('/movies', movieRoutes);
 app.use('/trending', trendingRoutes);
 app.use('/series', seriesRoutes);
+app.use('/search', searchRouter);
+//app.use('/search', searchRequest);
 
 // Error handling middleware
 app.use(errorHandler);
